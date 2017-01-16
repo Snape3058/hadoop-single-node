@@ -4,9 +4,9 @@
 
 ## files in this installer package:
 
-- hadoop-2.7.1.tar.gz
+- hadoop-2.7.1.tar.gz (will down load automately)
 - install.sh
-- readme.html
+- README.md
 
 ---
 
@@ -44,29 +44,40 @@
 
 1. use passwd command to set a password for hadoop to login
 
-	sudo passwd hadoop
+```shell
+sudo passwd hadoop
+```
 
 2. login with hadoop
 
-	su hadoop
+```shell
+su hadoop
+```
 
 3. generate ssh-key for hadoop
 
-	ssh-keygen
+```shell
+ssh-keygen
+```
 
 4. copy ssh-key to localhost and 0.0.0.0
 
-	ssh-copy-id localhost
-
-	ssh-copy-id 0.0.0.0
+```shell
+ssh-copy-id localhost
+ssh-copy-id 0.0.0.0
+```
 
 5. format hadoop namenode
 
-	hadoop namenode -format
+```shell
+hadoop namenode -format
+```
 
 6. start hadoop
 
-	start-all.sh
+```shell
+start-all.sh
+```
 
 7. test your hadoop
 
