@@ -42,44 +42,44 @@
 
 ## what you should do next:
 
-1. use passwd command to set a password for hadoop to login
+- use passwd command to set a password for hadoop to login
 
 ```shell
 sudo passwd hadoop
 ```
 
-2. login with hadoop
+- login with hadoop
 
 ```shell
 su hadoop
 ```
 
-3. generate ssh-key for hadoop
+- generate ssh-key for hadoop
 
 ```shell
 ssh-keygen
 ```
 
-4. copy ssh-key to localhost and 0.0.0.0
+- copy ssh-key to localhost and 0.0.0.0
 
 ```shell
 ssh-copy-id localhost
 ssh-copy-id 0.0.0.0
 ```
 
-5. format hadoop namenode
+- format hadoop namenode
 
 ```shell
 hadoop namenode -format
 ```
 
-6. start hadoop
+- start hadoop
 
 ```shell
 start-all.sh
 ```
 
-7. test your hadoop
+- test your hadoop
 
 	see [namenode information page](http://localhost:50070) to get more information about your namenode.
 
